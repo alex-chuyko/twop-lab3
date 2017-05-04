@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to right, #232526, #414345);
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+.input-number {
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+    height: 25px;
+    font-size: 16px;
+    border-radius: 3px;    
+}
+.input-block {
+    width: 300px;
+    margin: 0 auto;
+}
+.submit {
+    width: 100%;
+    height: 35px;
+    background-color: #e67e22;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #d46d00;
+    border-radius: 5px;
+    box-shadow: 0 0px 5px white;
+}
+.submit:hover {
+    background-color: #d46d00;
+}
+#output-block {
+    width: 400px;
+    min-height: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: none;
+}
+#message-text {
+    font-size: 16px;
+    text-align: center;
+}
+.output-success {
+    background-color: green;
+    color: white;
+    border: 1px solid gray;    
+}
+.output-error {
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}

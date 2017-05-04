@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Triangle task</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+        <script>
+            mocha.setup('bdd');
+        </script>
+        <script>
+            var assert = chai.assert;
+        </script>
+    </head>
+    <body>
+        <h1>Triangle task</h1>
+        <div class="input-block">
+            <input type="text" 
+                id="1"
+                class="input-number" 
+                placeholder="First side"
+                maxlength="3">        
+            <br>
+            <input type="text" 
+                class="input-number" 
+                placeholder="Second side"
+                maxlength="3">        
+            <br>
+            <input type="text" 
+                class="input-number" 
+                placeholder="Third side" 
+                maxlength="3">
+            <br>
+            <button class="submit" onclick="determineTypeTriangle()">Найти тип</button>
+        </div>
+        <div id="output-block">
+            <p id="message-text"></p>
+        </div>
+        <div id="mocha"></div>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script src="tests/test.js"></script>
+
+        <script>
+            mocha.run();
+        </script>
+    </body>
+</html>
